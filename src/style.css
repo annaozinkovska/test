@@ -1,6 +1,6 @@
 @font-face {
     font-family: "mullerregular";
-    src: url(MullerRegular.ttf);
+    src: url(/fonts/MullerRegular.ttf);
     font-display: swap;
     font-style: normal;
     font-weight: 400;
@@ -9,7 +9,7 @@
  
 @font-face {
     font-family: "mullerbolt";
-    src: url(MullerBold.ttf);
+    src: url(/fonts/MullerBold.ttf);
     font-display: swap;
     font-style: normal;
     font-weight: bold;
@@ -18,7 +18,7 @@
  
  
 .first-screen {
-    background-image: url(background.jpg);
+    background-image: url(/picture/background.jpg);
     background-repeat: no-repeat;
     BACKGROUND-SIZE: 100%;
     width: 1150px;
@@ -214,7 +214,7 @@ h1 {
 }
  
 .lady>p {
-    background-image: url(lady.png);
+    background-image: url(/picture/lady.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 717px;
@@ -343,7 +343,7 @@ footer {
 }
  
 .logofooter {
-    background-image: url(tooth.png);
+    background-image: url(/picture/tooth.png);
     background-repeat: no-repeat;
     height: 74px;
     width: 100px;
@@ -388,7 +388,7 @@ h4 {
 }
  
 .phonefooter>picture {
-    background-image: url(phone.png);
+    background-image: url(/picture/phone.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -428,7 +428,7 @@ h4 {
 }
  
 .instagramfooter>picture {
-    background-image: url(instagram.png);
+    background-image: url(/picture/instagram.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -448,7 +448,7 @@ h4 {
 }
  
 .emeilfooter>picture {
-    background-image: url(email.png);
+    background-image: url(/picture/email.png);
     background-repeat: no-repeat;
     height: 45px;
     width: 28px;
