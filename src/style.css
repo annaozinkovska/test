@@ -1,6 +1,6 @@
 @font-face {
     font-family: "mullerregular";
-    src: url(MullerRegular.ttf);
+    src: url(/fonts/MullerRegular.ttf);
     font-display: swap;
     font-style: normal;
     font-weight: 400;
@@ -9,21 +9,22 @@
  
 @font-face {
     font-family: "mullerbolt";
-    src: url(MullerBold.ttf);
+    src: url(/fonts/MullerBold.ttf);
     font-display: swap;
     font-style: normal;
     font-weight: bold;
 }
  
+
  
  
 .first-screen {
-    background-image: url(background.jpg);
+    background-image: url(/picture/background.jpg);
     background-repeat: no-repeat;
     BACKGROUND-SIZE: 100%;
-    width: 1150px;
-    height: 800px;
-    padding: 0 136px;
+
+    height: 583;
+    padding: px;
 }
  
 .logo {
@@ -39,9 +40,19 @@
     height: 58;
     display: flex;
     margin-top: 1%;
+
+    
 }
- 
- 
+ .logoteefphonever{
+    width: 225px;
+    height: 58;
+    display: flex;
+    margin-top: 1%;
+ }
+ .logoteefphonever>img{
+    width: 18px;
+    height: 19px;
+ }
  
 .textlogo {
     box-sizing: border-box;
@@ -50,7 +61,13 @@
     text-decoration: none;
     font-family: 'Russo One';
 }
- 
+.textlogophonever {
+    box-sizing: border-box;
+    color: #46b1de;
+    text-decoration: none;
+    font-family: 'Russo One';
+    font-size:9px ;
+}
 .contact {
     display: flex;
     justify-content: space-between;
@@ -77,6 +94,23 @@
     padding-top: 37px;
     color: black;
  
+}
+.phonephonever {
+    display: flex;
+    justify-content:center;
+    width: 96px;
+    padding-top: 11px;
+    color: black;
+    font-size: 8PX;
+ 
+}
+.phonephonever>a {
+    color: black;
+    text-decoration: none;
+}
+.phonephonever>img{
+    width: 8px;
+    height: 8px;
 }
  
 .phone>a {
@@ -214,7 +248,7 @@ h1 {
 }
  
 .lady>p {
-    background-image: url(lady.png);
+    background-image: url(/picture/lady.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 717px;
@@ -222,6 +256,15 @@ h1 {
     position: absolute;
     top: 11px;
     left: 594px;
+}
+.ladyphonever>p {
+    background-image: url(/picture/lady.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 199px;
+    /* position: absolute; */
+    top: 376px;
+    left: 48px;
 }
  
 .windovsnumbers {
@@ -343,7 +386,7 @@ footer {
 }
  
 .logofooter {
-    background-image: url(tooth.png);
+    background-image: url(/picture/tooth.png);
     background-repeat: no-repeat;
     height: 74px;
     width: 100px;
@@ -388,7 +431,7 @@ h4 {
 }
  
 .phonefooter>picture {
-    background-image: url(phone.png);
+    background-image: url(/picture/phone.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -428,7 +471,7 @@ h4 {
 }
  
 .instagramfooter>picture {
-    background-image: url(instagram.png);
+    background-image: url(/picture/instagram.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -448,7 +491,7 @@ h4 {
 }
  
 .emeilfooter>picture {
-    background-image: url(email.png);
+    background-image: url(/picture/email.png);
     background-repeat: no-repeat;
     height: 45px;
     width: 28px;
@@ -458,4 +501,22 @@ h4 {
     grid-area: copy;
     font-size: small;
     text-align: right;
+}
+
+
+@media screen and ( max-width:320px ) {
+    :root{
+  --first-screen-height:568px; } 
+    .contact {display: none;}
+    .logoteef { display: none;}
+    .phone {display: none;}
+    .lady {display: none;}
+    .percentages{display: none;}
+        
+}
+@media screen  and ( max-width:1400px ) and (min-width:321px){ 
+    :root{--first-screen-height:663px; } 
+   .logoteefphonever{display: none;}
+   .logo{padding:  0 4%;}
+   .ladyphonever{display: none;}
 }
