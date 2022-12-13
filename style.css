@@ -38,7 +38,7 @@
 
 
 .first-screen {
-    background-image: url(/images/background.jpg);
+    background-image: url(/img/background.jpg);
     background-repeat: no-repeat;
     BACKGROUND-SIZE: 384%;
     width: var(--section-width);
@@ -141,7 +141,7 @@
 }
 
 .phone>picture {
-    background-image: url(/images/phone.svg);
+    background-image: url(/picture/phone.svg);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
