@@ -141,7 +141,7 @@
 }
 
 .phone>picture {
-    background-image: url(/picture/phone.svg);
+    background-image: url(/img/phone.svg);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
@@ -392,7 +392,7 @@ gap: 10px   ;
     top: 376px;
     } */
 .lady>picture {
-    background-image: url(/picture/lady.png);
+    background-image: url(/img/lady.png);
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
@@ -606,7 +606,7 @@ input#name {
 }
 
 .userimg {
-    background-image: url(/picture/user\ 4.svg);
+    background-image: url(/img/user\ 4.svg);
     background-repeat: no-repeat;
     width: 26.15px;
     height: 23px;
@@ -632,7 +632,7 @@ input#phone {
 }
 
 .userphone {
-    background-image: url(/picture/-phone-in-talk_90490\ 4.svg);
+    background-image: url(/img/-phone-in-talk_90490\ 4.svg);
     background-repeat: no-repeat;
     width: 26.15px;
     height: 23px;
@@ -688,7 +688,7 @@ input#singup {
 }
 
 .foto>picture:first-child {
-    background-image: url(/picture/1foto.png);
+    background-image: url(/img/1foto.png);
     background-repeat: no-repeat;
     width: 280px;
     height: 128px;
@@ -696,7 +696,7 @@ input#singup {
 }
 
 .foto>picture:nth-child(2) {
-    background-image: url(/picture/2foto.png);
+    background-image: url(/img/2foto.png);
     background-repeat: no-repeat;
     width: 280px;
     height: 128px;
@@ -704,7 +704,7 @@ input#singup {
 }
 
 .foto>picture:nth-child(3) {
-    background-image: url(/picture/3foto.png);
+    background-image: url(/img/3foto.png);
     background-repeat: no-repeat;
     width: 280px;
     height: 128px;
@@ -764,7 +764,7 @@ footer {
 }
 
 .logofooter {
-    background-image: url(/picture/tooth.png);
+    background-image: url(/img/tooth.png);
     background-repeat: no-repeat;
     width: 55.33px;
     height: 57.46px;
@@ -907,7 +907,7 @@ footer {
 }
 
 .phonefooter>picture {
-    background-image: url(/picture/phone.png);
+    background-image: url(/img/phone.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -949,7 +949,7 @@ footer {
 }
 
 .instagramfooter>picture {
-    background-image: url(/picture/instagram.png);
+    background-image: url(/img/instagram.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
@@ -970,7 +970,7 @@ footer {
 }
 
 .emeilfooter>picture {
-    background-image: url(/picture/email.png);
+    background-image: url(/img/email.png);
     background-repeat: no-repeat;
     height: 45px;
     width: 28px;
@@ -1014,7 +1014,7 @@ footer {
     }
 
     .first-screen {
-        background-image: url(/picture/background.jpg);
+        background-image: url(/img/background.jpg);
         background-repeat: no-repeat;
         BACKGROUND-SIZE: 100%;
         width: 1400px;
@@ -1339,7 +1339,7 @@ footer {
         left: 718px;
         top: 143px;} */
     .lady>picture {
-        background-image: url(/picture/lady.png);
+        background-image: url(/img/lady.png);
         background-repeat: no-repeat;
         background-size: 100%;
         position: absolute;
