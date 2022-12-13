@@ -1339,7 +1339,7 @@ footer {
         left: 718px;
         top: 143px;} */
     .lady>picture {
-        background-image: url(/img/lady.png);
+        background-image: url(./img/lady.png);
         background-repeat: no-repeat;
         background-size: 100%;
         position: absolute;
