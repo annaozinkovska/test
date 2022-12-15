@@ -1134,9 +1134,9 @@ footer {
         display: none
     }
 
-    /* .teefsection {
+    .teefsection {
         display: none;
-    } */
+    }
 }
 
 @media (max-width: 500px) {
@@ -1148,9 +1148,9 @@ footer {
         display: none
     }
 
-    /* .teefsection {
+    .teefsection {
         display: none;
-    } */
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
