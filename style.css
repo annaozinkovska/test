@@ -494,10 +494,12 @@
 input#name {
     border: transparent;
     background-color: transparent;
-    height: 54px;
+    height: 48px;
     position: absolute;
     left: 54px;
+    outline: none;
 }
+
 
 .userimg {
     background-image: url(./img/user\ 4.svg);
@@ -523,6 +525,7 @@ input#phone {
     height: 54px;
     position: absolute;
     left: 54px;
+    outline: none;
 }
 
 .userphone {
@@ -565,6 +568,7 @@ input#singup {
     flex-grow: 0;
     background-color: transparent;
     border: transparent;
+    outline: none;
 }
 
 .fotosect {
@@ -768,7 +772,7 @@ footer {
 
 .phonefooter {
     display: flex;
-    margin: 12px;
+    /* margin: 12px; */
 
 }
 
@@ -779,19 +783,34 @@ footer {
     /* padding-top: 6px; */
 }
 
-.phonefooter>picture {
-    background-image: url(./img/phone.png);
+.phonefooter a::before {
+    content: url(./img/phone.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
 }
 
+.phonefooter a:hover {
+    border-bottom: white solid 4px;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+/* .phonefooter>a::after:hover{
+    cursor: pointer;
+    border-bottom: #DDE0DC solid 3px;
+} */
 .imgfooter {
     display: flex;
     justify-content: space-between;
     width: 133px;
 
 
+}
+
+.imgfooter a:not(:first-child) {
+    padding-left: 31px;
+    box-sizing: border-box
 }
 
 .imgfooter>a:nth-child(3) {
@@ -807,7 +826,6 @@ footer {
     background-image: url(./img/telegram.png);
     background-repeat: no-repeat;
     background-size: 100%;
-
     width: 28px;
 }
 
@@ -835,12 +853,18 @@ footer {
     /* padding-top: 6px; */
 }
 
-.instagramfooter>picture {
-    background-image: url(./img/instagram.png);
+.instagramfooter a::before {
+    content: url(./img/instagram.png);
     background-repeat: no-repeat;
     height: 28px;
     width: 28px;
-    color: blueviolet;
+
+}
+
+.instagramfooter a:hover {
+    border-bottom: white solid 4px;
+    cursor: pointer;
+    padding-bottom: 3px;
 }
 
 .emeilfooter {
@@ -856,11 +880,19 @@ footer {
     /* padding-top: 6px; */
 }
 
-.emeilfooter>picture {
-    background-image: url(./img/email.png);
+.emeilfooter::before {
+    padding-left: 0;
+    /* padding-right: 3px; */
+    content: url(./img/email.png);
     background-repeat: no-repeat;
     height: 45px;
     width: 28px;
+}
+
+.emeilfooter a:hover {
+    border-bottom: white solid 4px;
+    cursor: pointer;
+    padding-bottom: 9px;
 }
 
 .copy {
@@ -1258,14 +1290,19 @@ footer {
         flex-grow: 0;
     }
 
+    .contact a:hover {
+        cursor: pointer;
+        color: #46B1DE;
+    }
+
 
 
     .phone {
-        grid-area: phone;
+
         display: flex;
-        justify-content: right;
+        justify-content: space-around;
         position: absolute;
-        width: 174px;
+        width: 199px;
         height: 24px;
         left: 1016px;
         top: 76px;
@@ -1285,17 +1322,69 @@ footer {
         text-align: center;
 
         color: #1B1D1F;
-        color: #1B1D1F;
     }
 
-    .phone>picture {
-        background-image: url(./img/phone.svg);
-        background-repeat: no-repeat;
-
-
+    .phone>a::before {
+        content: url(./img/phone.svg);
+        margin-right: 5px;
         width: 24px;
         height: 24px;
     }
+
+    .en {
+        position: absolute;
+        top: 77px;
+        right: 110px;
+        width: 77px;
+        height: 23px;
+    }
+
+    .en .uaen {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+
+
+    .en .uaen p:first-child {
+        box-sizing: border-box;
+        margin: 0;
+
+        width: 27px;
+        height: 23px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #000000;
+    }
+
+    .en .uaen p:last-child {
+        box-sizing: border-box;
+        margin: 0;
+
+        width: 26px;
+        height: 23px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .en .uaen p:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+
 
     .what {
         left: 426px;
@@ -1652,6 +1741,12 @@ footer {
         background: rgba(217, 217, 217, 0.71);
         border-radius: 8px;
         margin: 0;
+        border: #000000 0px;
+    }
+
+    .user .name:hover {
+        cursor: pointer;
+        border: #46B1DE solid 1px;
     }
 
     .user .phoneuser {
@@ -1663,6 +1758,11 @@ footer {
         background: rgba(217, 217, 217, 0.71);
         border-radius: 8px;
         margin: 0;
+    }
+
+    .user .phoneuser:hover {
+        cursor: pointer;
+        border: #46B1DE solid 1px;
     }
 
     .user .clicuser {
@@ -1811,19 +1911,21 @@ footer {
         line-height: 13px;
         top: 181px;
         left: 116px;
-      
+
     }
-    .servises1>div p{
+
+    .servises1>div p {
         color: #1B1D1F;
-        
+
     }
+
     .servises1>div p:hover {
         color: white;
 
     }
 
 
-    
+
     .servises1 .uaen {
         position: absolute;
         display: flex;
@@ -1939,15 +2041,21 @@ footer {
         height: 27px;
     }
 
+    .footertesla div:not(:first-child) {
+        padding-top: 18px;
+        box-sizing: border-box;
+
+    }
+
     .copy {
         position: absolute;
         top: 372px;
         left: 1045px;
     }
 
-    .imgfooter {
+    /* .imgfooter {
         margin: 3px 0;
-    }
+    } */
 
     .teefsection {
         height: 833px;
