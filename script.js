@@ -1,67 +1,64 @@
+let car ={
+ 
+  model:"tesla",
+  year:2021,
+  color: "red",
+  signal:function() {
+    alert("fa! fa!");
+  }
+}
+alert(car.signal());
 
-// let a = prompt( "Enter first number");
-// let b = prompt( "Enter second number");
-// function maxNumber(a, b) {
-// if (+a > +b) {
-//     show = function () {
-//        alert(+a)
 
+// let salaries = {
+//   frontend:12000,
+//   backend:10000,
+//   designer:8000,
+//   dayPay: function(){
+//       alert('We mush pay salary on Tuesday!');
+// },
+//   total(){
+//     let sum = 0;
+//     for(const key in this) {
+//       if (typeof this[key] === 'number') {
+//         sum += this[key] 
 //     }
-// }
-//  if  (+a < +b) {
-//   show = function () {
-//      alert(+b)
+      
+//     }
+//     console.log(sum, 'result')
+    
+//  }   } 
 
+
+
+// function Tehnik(brand , system ,cost){
+//   this.brand = brand;
+//   this.system = system;
+//   this.cost = cost;
+//   this[Symbol.toPrimitive] = function (hint) {
+//     console.log(hint);  
+//     switch (hint) {
+//       case 'string':
+//         return this.brand
+//       case 'number' :
+//         return this.cost
+//       case 'default' :
+//         return `//:"${this.brand}  ${this.system}  ${this.cost}"// `;
+//     }
 //   }
 // }
-// if (a === b) {
-//   show = function () {
-//      alert(`${a} = ${b}`)
-//   }
 
-//     }}
-// maxNumber(a, b);
-// show();
+// let dell = new Tehnik ('Dell', 'windows', 800,);
 
-
-// let number = prompt( "Enter  number");
-//  function  revers  (number) {
-//   if (number>0 ) {
-//     number = ( `${0-number}`);
-//     alert(number)}
-//  else (number<0 )
-//  { number =  (`${number*-1}`);
-//     alert(number) 
-//     }}
-//  revers(number);
-//  let number = prompt(`Введіть число яке множити на три `);
-//  let count = prompt(` Скільки разів множити на три `);
-
-// function tree (number,count) {
-// count= number**3;
-//     alert(`Ваше число ${number} у третій степені ${count}`);
-// }
-// tree(number, count);
+// let apple = new Tehnik( 'Apple', 'Mac OS', 1700,);
+// // let group = {};
+// // group =(`//:"${dell.brand} ${dell.system} ${dell.cost}// ${apple.brand} ${apple.system} ${apple.cost}"//`);
+// console.log(apple + dell);
+// console.log(+apple);
+// console.log(String(dell));
 
 
 
 
-
-
-let km = prompt('Ведіть кілометри?');
-let metrik = prompt('Ведіть в  яку одиницю виміру переводити километри в СМ чи М?');
-let m =1000;
-let cm =100000;
-
-function getMetric(metrik,km,m,cm) {
-    if (metrik =='m') {
-         KmToM =(km)=>km*m;
-         return metrik = KmToM(km)}
-    else if (metrik =='cm') { 
-         KmToCm =(km)=>km*cm; 
-        return metrik = KmToCm(km)}
-};
-
-alert(getMetric(metrik,km,m,cm));
 
 
