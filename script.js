@@ -1,64 +1,61 @@
-let car ={
- 
-  model:"tesla",
-  year:2021,
-  color: "red",
-  signal:function() {
-    alert("fa! fa!");
-  }
-}
-alert(car.signal());
+// let a = [`Mike`, `Nikola`, `Tom`];
+// console.log(a);
+// console.log(a[2]);
+// a [1] ='Alex';
+// console.log(a [1]);
+// a.length=1;
+// console.log(a);
+// console.log(a.length);
+
+// let a =[5, 3, -4, 25, 32, -16, 6];
+// let b = [ 21, -30, 9, 5, 12, -19, 5, 25];
+// function rut(a,b) {
+//   let i =0;
+
+// for (let i= 0; i<a.length;i++) {
+//   console.log (`${a[i]} - ${b[i]}  `);
+//   if  (a[i]<b[i])
+//   console.log(`${a[i]} < ${b[i]}`);
+//   if (a[i]==b[i]) 
+//  console.log(`${a[i]} = ${b[i]}`);
+//  if (a[i]>b[i]) 
+//  console.log(`${a[i]} > ${b[i]}`);
+
+// };
+
+  
+
+// let phrase = 'I, am, learning,  JavaScript, right, now,';
+//   phrase = phrase.split(',');
+// console.log(phrase);
 
 
-// let salaries = {
-//   frontend:12000,
-//   backend:10000,
-//   designer:8000,
-//   dayPay: function(){
-//       alert('We mush pay salary on Tuesday!');
-// },
-//   total(){
-//     let sum = 0;
-//     for(const key in this) {
-//       if (typeof this[key] === 'number') {
-//         sum += this[key] 
+
+// let a = [5, 3, 8, 5, 3, 2, 1, 2,];
+// let b = [];
+
+// a.forEach(function (car) {
+
+//     if (b.indexOf(car) === -1) {
+        
+//         b.push(car);   
 //     }
-      
-//     }
-//     console.log(sum, 'result')
-    
-//  }   } 
+// });
+//   console.log(b );
 
 
+// let user=[{id:1,age:17 },
+//   {id:2, age:18 },
+//   {id:3, age:19 },
+//   {id:4, age:21 },
+//   {id:5, age:17 },
+//   {id:6, age:20 },
+//   {id:7, age:25 },
 
-// function Tehnik(brand , system ,cost){
-//   this.brand = brand;
-//   this.system = system;
-//   this.cost = cost;
-//   this[Symbol.toPrimitive] = function (hint) {
-//     console.log(hint);  
-//     switch (hint) {
-//       case 'string':
-//         return this.brand
-//       case 'number' :
-//         return this.cost
-//       case 'default' :
-//         return `//:"${this.brand}  ${this.system}  ${this.cost}"// `;
-//     }
-//   }
-// }
+// ]; 
+// function SelectionAge(user) {
+  
 
-// let dell = new Tehnik ('Dell', 'windows', 800,);
+// console.log( user.filter(us => us.age > 18 && us.age <= 20));};
 
-// let apple = new Tehnik( 'Apple', 'Mac OS', 1700,);
-// // let group = {};
-// // group =(`//:"${dell.brand} ${dell.system} ${dell.cost}// ${apple.brand} ${apple.system} ${apple.cost}"//`);
-// console.log(apple + dell);
-// console.log(+apple);
-// console.log(String(dell));
-
-
-
-
-
-
+//  SelectionAge(user)
