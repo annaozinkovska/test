@@ -1,0 +1,250 @@
+.cab {
+    position: absolute;
+    top: 114px;
+    left: -114px;
+    width: 300px;
+    height: 190px;
+    background-color: yellow;
+    border-radius: 20%;
+}
+.cab.capot:hover{
+     animation: ch-color-1 3s forwards;
+}
+
+.capot {
+    z-index: 0;
+    width: 482px;
+    height: 300px;
+    background-color: yellow;
+    border-radius: 20%;
+
+}
+
+.vils {
+    background-color: darkred;
+    top: 196px;
+    left: -6px;
+    width: 169px;
+    height: 169px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.vilss {
+    background-color: darkred;
+    width: 169px;
+    height: 169px;
+    top: 199px;
+    left: 261px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.W1 {
+
+    background-color: black;
+    width: 169px;
+    height: 6px;
+    top: 53%;
+    left: 4%;
+    position: absolute;
+    transform: rotate(-44deg);
+
+}
+
+.W2 {
+    background-color: black;
+    width: 169px;
+    height: 6px;
+    top: 47%;
+    left: 0%;
+    position: absolute;
+    transform: rotate(-126deg);
+}
+
+.W3 {
+    background-color: black;
+    width: 169px;
+    height: 6px;
+    top: 49%;
+    left: 4%;
+    position: absolute;
+    transform: rotate(0deg);
+}
+
+.W4 {
+    background-color: black;
+    width: 169px;
+    height: 6px;
+    top: 50%;
+    left: 4%;
+    position: absolute;
+    transform: rotate(91deg);
+}
+
+.W5 {
+    background-color: black;
+    width: 169px;
+    height: 6px;
+    top: 53%;
+    left: 4%;
+    position: absolute;
+    transform: rotate(-44deg);
+}
+
+.W6 {
+    background-color: black;
+    width: 169px;
+    height: 6px;
+    top: 53%;
+    left: 4%;
+    position: absolute;
+    transform: rotate(-44deg);
+}
+
+.window {
+    background-color: skyblue;
+    width: 284px;
+    height: 96px;
+    top: 21px;
+    left: 165px;
+    position: absolute;
+    border-radius: 10%;
+
+}
+
+.window2 {
+    background-color: skyblue;
+    width: 120px;
+    height: 96px;
+    top: 22px;
+    left: 30px;
+    position: absolute;
+    border-radius: 10%;
+
+}
+
+.bus {
+    position: relative;
+    top: 23%;
+    left: 100%;
+    width: 485px;
+    height: 367px;
+   
+    background-color: black;
+
+
+
+
+    margin-right: 0px;
+}
+
+  
+.bus:hover {
+    left: 23%;
+    animation: ch-color-1 3s forwards;
+}
+
+@keyframes ch-color-1 {
+  from {
+    background-color: black;
+  }
+  50% {
+    background-color: blue;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+}
+
+.bus1>span {
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 138.1613px;
+    line-height: 130%;
+    position: relative;
+    top: 23%;
+    left: 23%;
+}
+
+
+
+.bus1>span:first-child {
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    transition-timing-function:cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-duration:1s ;
+
+}
+
+.bus1>span:first-child:hover {
+    left: 120px;
+   
+}
+
+.bus1>span:nth-child(2) {
+    position: absolute;
+    left: 223px;
+    cursor: pointer;
+}
+
+.bus1>span:nth-child(3) {
+    position: absolute;
+    left: 316px;
+    cursor: pointer;
+}
+
+.bus1>span:nth-child(4) {
+    position: absolute;
+    left: 403px;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 2ms;
+}
+
+.bus1>span:nth-child(5) {
+    position: absolute;
+    left: 509px;
+    cursor: pointer;
+}
+
+.bus1>span:nth-child(6) {
+    position: absolute;
+    left: 599px;
+    cursor: pointer;
+}
+
+.bus1>span:nth-child(7) {
+    position: absolute;
+    left: 688px;
+    cursor: pointer;
+}
+
+.bus1>span:nth-child(2):hover {
+left:-10%;
+}
+
+.bus1>span:nth-child(3):hover {
+    left: 100%;
+}
+
+.bus1>span:nth-child(4):hover {
+    left: 100%;
+}
+
+.bus1>span:nth-child(5):hover {
+    left: 100%;
+}
+
+.bus1>span:nth-child(6):hover {
+    left: 100%;
+}
+
+.bus1>span:nth-child(7):hover {
+    left: 100%;
+}
