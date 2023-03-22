@@ -1,77 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="/style.css"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-     
-button {
-  background-color: transparent;
-  border: 1px solid #266DB6;
-  box-sizing: border-box;
-  color: #00132C;
-  font-family: "Avenir Next LT W01 Bold",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
 
-button:hover,
-button:active {
-  outline: 0;
-}
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
 
-button:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-button:before {
-  background-color: #D5EDF6;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
-}
-
-button:before {
-  background-color: #6DCFF6;
-}
-div{
-    display:none ;
-}
-
-@media (min-width: 768px) {
-  .butto {
-    padding: 16px 32px;
-  }
-
-}
-    </style>
-</head>
-<body>
-
-    <h2>Title start from A</h2>
-    <div class="user-a"></div>
-    <h2>Title start from AB</h2>
-    <div class="user-ab"></div>
-    <button class="add-a">Title start from A</button>
-    <button class="add-ab">Title start from AB</button>
-    <button class="add-all">Title start from A and AB</button>
-
-     <script src="/app.js"></script>
-</body>
+    <script class="mocha-init">
+      mocha.setup('bdd');
+      mocha.checkLeaks();
+    </script>
+    <script src="/test/validate.test.js"></script>
+    <script src="/test/app.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
+  </body>
 </html>
