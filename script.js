@@ -1,67 +1,109 @@
 
-// let a = prompt( "Enter first number");
-// let b = prompt( "Enter second number");
-// function maxNumber(a, b) {
-// if (+a > +b) {
-//     show = function () {
-//        alert(+a)
+// function getData (url){
+//     let result = fetch(url);
+//     result.then(response => 
+//         {
+//             if(response.ok){
+//             	return response.json();
+//             }
+//            throw new Error(`Error: ${response.status}`);
+//         })
+//     .then(data =>{ console.log(data.filter( title => title.title[0] === 'a'))
+//     })
+//     .catch((error) => console.log(error.message));
+// }
 
+// getData('https://jsonplaceholder.typicode.com/todos');
+
+
+// async function getData(url){
+//     try{
+//         let result = await fetch(url);
+//         if(result.ok){
+//             let response= await result.json()
+//             console.log(response.filter( title => title.title[0] === 'a'))
+        
+//         } else {
+//             throw new Error(`Error: ${result.status}`);
+//         }
+//     } catch(error){
+//         console.log(error.message)
 //     }
 // }
-//  if  (+a < +b) {
-//   show = function () {
-//      alert(+b)
-
-//   }
-// }
-// if (a === b) {
-//   show = function () {
-//      alert(`${a} = ${b}`)
-//   }
-
-//     }}
-// maxNumber(a, b);
-// show();
-
-
-// let number = prompt( "Enter  number");
-//  function  revers  (number) {
-//   if (number>0 ) {
-//     number = ( `${0-number}`);
-//     alert(number)}
-//  else (number<0 )
-//  { number =  (`${number*-1}`);
-//     alert(number) 
-//     }}
-//  revers(number);
-//  let number = prompt(`Введіть число яке множити на три `);
-//  let count = prompt(` Скільки разів множити на три `);
-
-// function tree (number,count) {
-// count= number**3;
-//     alert(`Ваше число ${number} у третій степені ${count}`);
-// }
-// tree(number, count);
+// getData('https://jsonplaceholder.typicode.com/todos');
 
 
 
+// async function getData(url){
+//         try{
+//             let result = await fetch(url);
+//             if(result.ok){
+//                 let response= await result.json()
+//                 for (const key in response) {
+//                    let res =  response.filter( title => title.title[0] === 'a')
+//             let a = document.querySelector('.user-a')
+//                     let span= document.createElement('span')
+//                     span.innerHTML =res
+//                     a.append(span);
+//                     getData()
+
+//                 } }
+//             else {
+//                 throw new Error(`Error: ${result.status}`);
+//             }
+//         } catch(error){
+//             console.log(error.message)
+//         }
+//     }
+//     getData('https://jsonplaceholder.typicode.com/todos');
+    
+
+async function getData(url) { 
+        try {
+            let result = await fetch(url);
+            if (result.ok) {
+                let response = await result.json();
+                let A = response.filter(title => title.title[0] === 'a');
+                let AB = response.filter(title => title.title[0] + title.title[1] === 'ab');
+                
+                A.forEach( e => {
+                    let p = document.createElement('p');
+                    p.innerHTML = JSON.stringify(e);
+                    usera.append(p);
+    
+                });
+                AB.forEach(e => {
+                    let p = document.createElement('p');
+                    p.innerHTML = JSON.stringify(e);
+                    userab.append(p);
+    
+                });
+            } 
+        } catch (Error) {
+            console.log(e.message);
+        }
+    }
+
+    
+    let btna = document.querySelector('.add-a');
+    let btnb = document.querySelector('.add-ab');
+    let btnall = document.querySelector('.add-all');
+    let usera = document.querySelector('.user-a');
+    let userab = document.querySelector('.user-ab');
+btna.onclick = function(){
+    usera.style.display='contents';
+}
+btnb.onclick = function(){
+    userab.style.display='contents';
+}
+btnall.onclick = function(){
+    userab.style.display='contents';
+    usera.style.display='contents';
+}
 
 
-
-let km = prompt('Ведіть кілометри?');
-let metrik = prompt('Ведіть в  яку одиницю виміру переводити километри в СМ чи М?');
-let m =1000;
-let cm =100000;
-
-function getMetric(metrik,km,m,cm) {
-    if (metrik =='m') {
-         KmToM =(km)=>km*m;
-         return metrik = KmToM(km)}
-    else if (metrik =='cm') { 
-         KmToCm =(km)=>km*cm; 
-        return metrik = KmToCm(km)}
-};
-
-alert(getMetric(metrik,km,m,cm));
-
-
+    
+    getData('https://jsonplaceholder.typicode.com/todos');
+    
+        
+     
