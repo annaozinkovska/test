@@ -1,106 +1,91 @@
+// // async function data(url) {
+    
+// //     let result =  await fetch(url)
+// //      let jsona =await result.json()
+// // for (const key in jsona) {
+// //     if (jsona[key].isAdmin=== true) {
+// //       console.log(jsona[key]);
+        
+// //     }
+// // }
+// // }
+// // data(`./data.json`)
 
-// const mixin = {
-//     getPrice() { return this.price },
-//     getVAL() {return 'wrong options'},
-//     getSingleTax () {return 'wrong options'},
-//     getExciseduty () {return 'wrong options'},
+
+
+// let nikola = {firstName: 'Nikola', lastName: 'Tesla'};
+// let bob = {firstName: 'Bob'};
+// let mike = {lastName: 'Smith'};
+// let michael= {};
+// let getFullName = function (user) {
+//      return user.firstName + user.lastName}
+     
+// getFullName = new Proxy( getFullName, {
+//     apply(target, thisArg, args) {
+//         if (args[0].firstName=== undefined ) {
+//             console.log(`undefined `+ ' '+args[0].lastName);
+//         }
+//         else if (args[0].lastName ===undefined) {
+//             console.log(args[0].firstName +' ' + 'undefined');
+         
+//         }
+//         else if (args[0].lastName ===undefined ||args[0].firstName=== undefined  ) {
+//             console.log(  'undefined' +' '+ 'undefined');
+         
+//         }
+//         else {
+//             console.log(args[0].lastName , args[0].firstName);
+//         }
+//        }
+
+// })
+// // console.log(getFullName(bob))//Bob undefined
+// //      console.log(getFullName(mike))//undefined Smith
+// //      console.log(getFullName(michael))//undefined undefined
+// //      console.log(getFullName(nikola))
+
+
+
+
+
+
+// const users = [
+//     {name: 'Nikola', age:18, isAdmin:true},
+//     {name: 'Bob', age:25, isAdmin:false},
+//     {name: 'Mike', age:32, isAdmin:false},
+//     {firstName: 'Nikolaeefd',  age: 34 ,lastName: 'Tesla'},
+// ]
+// localStorage.setItem(users[0].name, JSON.stringify(users[0]));
+// localStorage.setItem(users[1].name, JSON.stringify(users[1]));
+// localStorage.setItem(users[2].name, JSON.stringify(users[2]));
+// localStorage.setItem(users[3].firstName, JSON.stringify(users[3]))
+
+// function sayHelloToUser(id) {
+//     console.log('Hello ' + localStorage.key(id-1));
 // }
 
-// class Cola {
-//     constructor(brend, price) {
-//         this.brend = brend;
-//         this.price = price;
-//     }
-// }
-// class Whiskey {
-//     constructor(brend, price) {
-//         this.brend = brend;
-//         this.price = price;
-//     }
-// }
-// class Ice {
-//     constructor(price) {
-//         this.price = price;
-//     }
-// }
-// Object.assign(Whiskey.prototype , mixin)
-// Whiskey.prototype.getExciseDuty = function() {return this.withVAT = (this.price + this.price * 0.3) + 10}
-// Object.assign(Cola.prototype , mixin)
-// Cola.prototype.getVAL  = function() {return this.withVAT = this.price + this.price * 0.2  }
-// Object.assign(Ice.prototype , mixin)
-// Ice.prototype.getSingleTax  = function() {return this.withVAT = this.price + 1}
-// const wit = new Whiskey ('jack', 1500 )
-// const colafree = new Cola ( 'free', 10) 
-// const ices =new Ice (1)
-// console.log(wit.getExciseDuty() ); 
-// console.log(ices.getSingleTax());
-// console.log( colafree.getVAL());
-
-    // const list= document.querySelector('.shop-list')
-    // const li = list.getElementsByTagName('li');
-    // let array = []
-    // for (const key in li) {
-    //     if (typeof li[key].innerText == 'string') {
-    //         array.push(li[key].innerText);
-    //     }
-    // }
-    // console.log(new Set(array));
+// sayHelloToUser(1);
+// sayHelloToUser(2);
+// sayHelloToUser(3);
+// sayHelloToUser(4);
 
 
-    let mike = {name:'Mike', age: 18}
-    let bob = {name:'Bob', age: 25}
-    let nikola = {name:'Nikola', age: 32}
-// let userVisits = new Map()
 
-const userVisits = new Map();
-
-function mikeVisit() {
-    let count =1;
-    return function () {
-        userVisits.set(mike, count);
-    return count++;
-    };
+function showValue() { 
+    console.dir(document.querySelector('input').value);
+}
+const btn = document.querySelector('button');
+btn.addEventListener('click',showValue);
+document.querySelector('input').value = getValue("input");
+function getValue(key) {
+  if (localStorage.getItem(key) === null) {
+    return "";
+  }
+  return localStorage.getItem(key);
 }
 
-    function bobVisit() {
-        let count = 1;
-            return function () {
-                userVisits.set(bob, count);
-            return count++;
-        }}
-        function nikolaVisit() {
-            let count = 1;
-                return function () {
-                    userVisits.set(nikola, count);
-                return count++;
-            }}
+let cookieShow = showValue;
+document.cookie = `${cookieShow}=${JSON.stringify(showValue)}; path=/; expires=Tue, 15 Jan 2030 06:00:00 GMT`;
 
-            const bobVisits = bobVisit();
-             const nikolaVisits= nikolaVisit()
-             const mikeVisits = mikeVisit();
-let ul = document.querySelector('ul')
-let buttonm= document.createElement('button')
-let buttonb= document.createElement('button')
-let buttonn= document.createElement('button')
-buttonm.innerHTML= 'MIKE';
-buttonb.innerHTML= 'BOB';
-buttonn.innerHTML= 'NIKOLA';
-ul.append(buttonb)
-ul.append(buttonm)
-ul.append(buttonn)
-buttonb.onclick = function() {
-    bobVisits(bob);
-   
-    console.log(userVisits.get(bob));//3
-  };
-  buttonm.onclick = function() {
-   mikeVisits(mike);
-   console.log(userVisits.get(mike));
-  };
-  buttonn.onclick = function() {
-     nikolaVisits(nikola);
-         console.log(userVisits.get(nikola));//3
-   
-  };
 
 
